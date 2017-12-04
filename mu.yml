@@ -2,6 +2,11 @@ namespace: mu
 environments:
 - name: acceptance
 - name: production
+  cluster:
+    maxSize: 2
+    keyName: juanmnd-mac
+  discovery:
+    provider: consul
 service:
   name: ecstest
   port: 80
