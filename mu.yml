@@ -5,6 +5,7 @@ environments:
 service:
   name: ecstest
   port: 80
+  healthEndpoint: /
   pathPatterns:
   - /*
   pipeline:
